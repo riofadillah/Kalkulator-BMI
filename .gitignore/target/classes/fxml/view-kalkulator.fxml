@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="620.0" prefWidth="480.0" spacing="10.0" style="-fx-background-color: #f8fafc; -fx-font-family: 'SansSerif'; -fx-font-size: 14px;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KalkulatorController">
+
+    <padding>
+        <Insets bottom="28" left="28" right="28" top="28" />
+    </padding>
+
+    <children>
+
+        <Label style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #0f172a;" text="Kalkulator BMI" />
+
+        <Label style="-fx-text-fill: #64748b;" text="Masukkan berat dan tinggi badan untuk menghitung BMI." wrapText="true" />
+
+        <Label text="Berat badan (kg)" />
+        <TextField fx:id="txtBerat" promptText="Contoh: 60" />
+
+        <Label text="Tinggi badan (cm)" />
+        <TextField fx:id="txtTinggi" promptText="Contoh: 170" />
+
+        <Button defaultButton="true" maxWidth="Infinity" onAction="#hitungBMI" style="-fx-background-color: #2563eb; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8;" text="Hitung BMI" />
+
+        <Button maxWidth="Infinity" onAction="#resetForm" style="-fx-background-color: #e2e8f0; -fx-text-fill: #0f172a; -fx-padding: 10; -fx-background-radius: 8;" text="Reset" />
+
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0f172a;" text="Kategori " />
+
+        <Label fx:id="lblKategori" minHeight="70.0" prefHeight="70.0" prefWidth="210.0" text="Kategori BMI akan tampil di sini." textFill="#6682bf" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+
+    </children>
+</VBox>
