@@ -2,6 +2,8 @@
 
 Aplikasi berbasis Java untuk menghitung Indeks Massa Tubuh (Body Mass Index / BMI) guna membantu mengetahui status berat badan ideal.
 
+![Tampilan Kalkulator BMI](screenshots/kalkulator-bmi.png)
+
 ---
 
 ## 1. Deskripsi
@@ -12,7 +14,7 @@ Kalkulator BMI adalah program sederhana yang menghitung nilai BMI berdasarkan in
 2. Pengguna memasukkan data **Tinggi Badan** dalam satuan sentimeter (cm).
 3. Program mengonversi tinggi badan ke meter, lalu menghitung nilai BMI menggunakan rumus:
 
-          BMI = Berat Badan (kg) / (Tinggi Badan (m))²
+> **BMI = Berat Badan (kg) / (Tinggi Badan (m))²**
 
 ## 3. Kategori BMI
 Hasil perhitungan BMI dikelompokkan ke dalam kategori berikut:
@@ -25,5 +27,5 @@ Hasil perhitungan BMI dikelompokkan ke dalam kategori berikut:
 | ≥ 30.0 | Obesitas (Obese) |
 
 ## 4. Teknologi
-* **Java** 
+* **Java** (JDK 8+)
 * **Apache Maven**
