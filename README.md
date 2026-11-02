@@ -27,5 +27,5 @@ Hasil perhitungan BMI dikelompokkan ke dalam kategori berikut:
 | ≥ 30.0 | Obesitas (Obese) |
 
 ## 4. Teknologi
-* **Java** (JDK 8+)
+* **Java** 
 * **Apache Maven**
