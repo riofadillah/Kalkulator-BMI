@@ -1,4 +1,3 @@
-
 package controller;
 
 import javafx.fxml.FXML;
@@ -21,11 +20,11 @@ public class KalkulatorController {
     private void hitungBMI() {
         try {
             double berat = Double.parseDouble(
-                txtBerat.getText().replace(",", ".")
+                    txtBerat.getText().replace(",", ".")
             );
 
             double tinggi = Double.parseDouble(
-                txtTinggi.getText().replace(",", ".")
+                    txtTinggi.getText().replace(",", ".")
             );
 
             Pengguna pengguna = new Pengguna(berat, tinggi);
@@ -35,15 +34,19 @@ public class KalkulatorController {
 
             if (bmi < 18.5) {
                 lblKategori.setStyle(
-                    "-fx-text-fill: #eab308; -fx-font-size: 18px;"
+                        "-fx-text-fill: #eab308; -fx-font-size: 24px;"
                 );
-            } else if (bmi < 25) {
+            } else if (bmi < 25.0) {
                 lblKategori.setStyle(
-                    "-fx-text-fill: #2563eb; -fx-font-size: 18px;"
+                        "-fx-text-fill: #2563eb; -fx-font-size: 24px;"
+                );
+            } else if (bmi < 30.0) {
+                lblKategori.setStyle(
+                        "-fx-text-fill: #f97316; -fx-font-size: 24px;"
                 );
             } else {
                 lblKategori.setStyle(
-                    "-fx-text-fill: #dc2626; -fx-font-size: 18px;"
+                        "-fx-text-fill: #dc2626; -fx-font-size: 24px;"
                 );
             }
 
@@ -57,7 +60,7 @@ public class KalkulatorController {
     private void tampilkanError(String pesan) {
         lblKategori.setText(pesan);
         lblKategori.setStyle(
-            "-fx-text-fill: #dc2626; -fx-font-size: 18px;"
+                "-fx-text-fill: #dc2626; -fx-font-size: 18px;"
         );
     }
 
@@ -68,7 +71,7 @@ public class KalkulatorController {
 
         lblKategori.setText("Kategori BMI akan tampil di sini.");
         lblKategori.setStyle(
-            "-fx-text-fill: black; -fx-font-size: 18px;"
+                "-fx-text-fill: black; -fx-font-size: 18px;"
         );
     }
 }
